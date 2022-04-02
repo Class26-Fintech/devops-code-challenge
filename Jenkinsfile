@@ -8,7 +8,6 @@ node
  
  stage("Build")
  {
- nodejs(nodeJSInstallationName: 'nodejs8.10.0') {
         sh 'npm install'
     }
  }  
