@@ -16,9 +16,7 @@ node
             steps {
                 sh './jenkins/scripts/test.sh' 
             }
-      
-        } 
-		
+      		
     //stage('UploadintoNexus') {
        nodejs(nodeJSInstallationName: 'nodejs8.10.0') {
           sh 'npm publish'
