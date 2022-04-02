@@ -32,6 +32,4 @@ node
  nodejs(nodeJSInstallationName: 'nodejs8.10.0') {
         sh 'npm start &'
     }
-}    
-    
 }
