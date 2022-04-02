@@ -13,14 +13,14 @@ node
     }
  }  
  
-  stage('ExecuteSonarQubeReport') {
-     nodejs(nodeJSInstallationName: 'nodejs8.10.0') {
-        sh 'npm run sonar'
-    }
+//stage('Test') { 
+            steps {
+                sh './jenkins/scripts/test.sh' 
+            }
       
         } 
 		
-    stage('UploadintoNexus') {
+    //stage('UploadintoNexus') {
        nodejs(nodeJSInstallationName: 'nodejs8.10.0') {
           sh 'npm publish'
       }
