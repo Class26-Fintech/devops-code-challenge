@@ -25,7 +25,6 @@ node
           sh 'npm publish'
       }
       
-          }	
  
  stage('RunNodeJsApp')
  {
